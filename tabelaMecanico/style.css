@@ -1,0 +1,35 @@
+
+table{
+    background-color: rgb(183, 183, 183);
+    height: 80%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50%;
+}
+
+#title{
+    background-color: rgb(127, 231, 127);
+    font-size: 25px;
+    text-decoration: solid;
+    text-align: center;
+
+}
+
+.linha{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.celula{
+    background-color: white;
+    border: 2px solid black;
+    width: 15%;
+}
+
+#classificacao{
+    background-color: rgb(20, 162, 209);
+    width: 10%;
+}
