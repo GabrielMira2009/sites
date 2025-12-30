@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de notas</title>
+</head>
+<body>
+     <h2>Verificação de Média do Aluno</h2>
+  <script>
+
+    let nome = prompt("Digite o nome do aluno:");
+
+
+    let nota1 = parseFloat(prompt("Digite a 1ª nota (0 a 10):"));
+    let nota2 = parseFloat(prompt("Digite a 2ª nota (0 a 10):"));
+    let nota3 = parseFloat(prompt("Digite a 3ª nota (0 a 10):"));
+    let nota4 = parseFloat(prompt("Digite a 4ª nota (0 a 10):"));
+
+
+    let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+
+    if (media >= 5) {
+      alert(nome + ", sua média foi " + media.toFixed(2) + ". Parabéns, você está APROVADO!");
+    } else {
+      alert(nome + ", sua média foi " + media.toFixed(2) + ". Você está REPROVADO.");
+    }
+  </script>
+</body>
+</html>

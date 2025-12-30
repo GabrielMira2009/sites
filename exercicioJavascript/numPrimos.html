@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Primos entre 0 e 100</title>
+</head>
+<body>
+  <h2>Números Primos entre 0 e 100</h2>
+
+   <button onclick="mostrarPrimos()">Mostrar números primos</button>
+
+
+  <p id="resultado"></p>
+
+  <script>
+    function mostrarPrimos() {
+      let primos = [];
+
+      for (let num = 2; num <= 100; num++) {
+        let ehPrimo = true;
+
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) {
+            ehPrimo = false;
+            break;
+          }
+        }
+
+        if (ehPrimo) {
+          primos.push(num);
+        }
+      }
+
+
+      document.getElementById("resultado").innerHTML =
+        "Os números primos entre 0 e 100 são:<br><br>" + primos.join(", ");
+    }
+  </script>
+</body>
+</html>
